@@ -1,0 +1,9 @@
+@charset "UTF-8";
+#main{
+	padding-top : 400px;
+	height : 500px;
+	width : 1200px;
+	margin : auto;
+	margin-top : 150px;
+	display : flex;
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#main{
+	height : 800px;
+	width : 1000px;
+	margin : auto;
+	margin-top : 500px;
+}
+#main .title{
+	font : bold;
+	font-size : 25px;
+	background : rgba(0,0,0,0.1);
+	margin-bottom : 30px;
+}
+#table .a{
+	display : flex;
+	width : 100%;
+	padding-bottom : 5px;
+}
+#table .a:nth-child(4) div:nth-child(3){
+	line-height : 22px;
+	padding-left : 10px;
+}
+#table .a .b{
+	width : 100px;;
+	padding-left : 30px;
+}
+#table .a:nth-child(3) .b{
+	line-height : 151px;
+}
+#table .a:nth-child(3) .c{
+	width : 900px;
+}
+#table .button{
+	margin-top : 20px;
+}

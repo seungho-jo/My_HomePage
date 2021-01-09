@@ -1,0 +1,43 @@
+@charset "UTF-8";
+#main{
+	height : 500px;
+	width : 800px;
+	margin : auto;
+	margin-top : 500px;
+}
+#main .delete{
+	line-height : 50px;
+	margin-bottom : 50px;
+}
+#main .delete tr{
+	width : 80%;
+	background : rgba(0,0,0,0.1);
+}
+#main .delete tr td{
+	width : 600px;
+	font-size : 25px;
+	margin : 0 auto;
+}
+#main .delete_table{
+	width : 800px;
+	height : 70%;
+}
+#main .delete_table .delete_table1{
+	width : 100%;
+	height : 100%;
+	text-align : center;
+}
+#main .delete_table .delete_table1 .table_mid .c{
+	height : 30px;
+}
+#main .delete_table .delete_table1 .table_mid .a{
+	height : 50px;
+}
+#main .delete_table .delete_table1 .table_mid .d{
+	height : 40px;
+}
+#main .delete_table .delete_table1 .table_mid .b{
+	width : 290px;
+	height : 50px;
+	font-size : 20px;
+}

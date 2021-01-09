@@ -1,0 +1,20 @@
+@charset "UTF-8";
+#main{
+	height : 800px;
+	width : 1200px;
+	margin : auto;
+	margin-top : 535px;
+}
+#main .d{
+	width : 700px;
+	margin : 0 auto;
+	margin-bottom : 30px;
+}
+#main .d .dd{
+	font-size : 25px;
+	font : bold;
+}
+#form{
+	margin : 0 auto;
+	width : 1000px;
+}

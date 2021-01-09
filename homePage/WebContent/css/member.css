@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body {
+    background: #fafafa;
+}
+#main {
+	padding-top : 535px;
+	height : 800px;
+	width : 1200px;
+	margin : auto;
+}
+#main .box {
+	
+}
+#main .box .large_box {
+	margin : auto;
+	width : 800px;
+	height : 800px;
+	border-collapse: collapse;
+}
+#main .box .large_box tr:nth-child(1){
+	text-align : center;
+}
+#main .box .large_box tr {
+	text-align : left;
+	padding : 2px;
+}
+#main .box .large_box tr .a{
+	color : black;
+	font-weight : bold;
+	width : 100%;
+	height : 50px;
+	text-align : center;
+	font-size : 30px;
+	padding-bottom : 30px;
+}
+
+#main .box .large_box tr .b1{
+	width : 20%;
+	border : 1px solid black;
+	vertical-align : middle;
+}
+#main .box .large_box tr .b2{
+	width : 50%;
+	border : 1px solid black;
+	vertical-align : middle;
+}
+#main .box .large_box tr .b3{
+	width : 30%;
+	border : 1px solid black;
+	vertical-align : middle;
+}
+#main .box .large_box .c{
+	text-align: center;
+}

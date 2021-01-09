@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*footer*/
+#footer{
+    width: 100%;
+    height: auto;
+    background: #7f7f85;
+    color: #adadad;
+    overflow: hidden;
+    border-top: 1px solid #fafafa;
+}
+#footer .adress {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+#footer .adress img{
+    padding-top:10px;
+    width: 150px;
+    height: 60px;
+    margin-right: 10px;
+}
+#footer .adress p{
+    float:left;
+    margin-right: 50px;
+    text-align:left;
+    color:white;
+}

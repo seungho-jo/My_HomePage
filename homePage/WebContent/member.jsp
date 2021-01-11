@@ -21,6 +21,27 @@ function idCheck(id){
 		frm.id.focus();
 		return;
 	}
+	//아이디 유효성 검사 (영문소문자, 숫자만 허용)
+    for (var i = 0; i < document.regFrm.id.value.length; i++) {
+        var ch = document.regFrm.id.value.charAt(i)
+         if (!(ch >= '0' && ch <= '9') && !(ch >= 'a' && ch <= 'z')&&!(ch >= 'A' && ch <= 'Z')) {
+            alert("아이디는 영문 대소문자, 숫자만 입력가능합니다.")
+            document.regFrm.id.focus();
+            return;
+        }
+    }
+    //아이디에 공백 사용하지 않기
+    if (document.regFrm.id.value.indexOf(" ") >= 0) {
+        alert("아이디에 공백을 사용할 수 없습니다.")
+        document.regFrm.id.focus();
+        return;
+    }
+    //아이디 길이 체크 (4~12자)
+   if (document.regFrm.id.value.length<4 || document.regFrm.id.value.length>12) {
+        alert("아이디를 4~12자까지 입력해주세요.")
+        document.regFrm.id.focus();
+        return;
+   }
 	url = "idCheck.jsp?id=" + id;
 	window.open(url,"IDCheck","width=300,height=150");
 }

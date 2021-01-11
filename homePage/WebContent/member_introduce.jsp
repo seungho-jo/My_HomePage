@@ -26,12 +26,6 @@
                 <div class="member_introduce">
                     구성원
                 </div>
-                <div class="search_box">
-                    <select name="선택" id="select">
-                        <option value="">이름</option>
-                    </select>
-                    <input type="text" placeholder="검색" id="search">
-                </div>
                 <div class="Professor">
                     <img src="img/gntech_staff_김병철교수님.jpg" alt="">
                     <p>김병철 교수님</p>

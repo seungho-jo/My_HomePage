@@ -24,7 +24,7 @@ public class CommentMgr {
 			con = pool.getConnection();
 			sql = "insert tblcomment(num, name, comment) value(?, ?, ?)";
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, bean.getNum());
+			pstmt.setInt(1, bean.getNum());
 			pstmt.setString(2, bean.getName());
 			pstmt.setString(3, bean.getComment());
 			if(pstmt.executeUpdate() == 1) {
@@ -53,9 +53,10 @@ public class CommentMgr {
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
 				commentBean dean = new commentBean();
-				dean.setNum(rs.getString("num"));
+				dean.setNum(rs.getInt("num"));
 				dean.setName(rs.getString("name"));
 				dean.setComment(rs.getString("comment"));
+				dean.setNumber(rs.getInt("number"));
 				vlist.add(dean);
 			}
 			
@@ -66,4 +67,40 @@ public class CommentMgr {
 		}
 		return vlist;
 	}
+	//댓글 개별 삭제
+		public void deleteComment(int number) {
+			Connection con = null;
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			String sql = null;
+			try {
+				con = pool.getConnection();
+				sql = "delete from tblcomment where number=?";
+				pstmt = con.prepareStatement(sql);
+				pstmt.setInt(1, number);
+				pstmt.executeUpdate();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally {
+				pool.freeConnection(con, pstmt, rs);
+			}
+		}
+		//댓글 전체 삭제
+		public void delete(int num) {
+			Connection con = null;
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			String sql = null;
+			try {
+				con = pool.getConnection();
+				sql = "delete from tblcomment where num=?";
+				pstmt = con.prepareStatement(sql);
+				pstmt.setInt(1, num);
+				pstmt.executeUpdate();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}finally {
+				pool.freeConnection(con, pstmt, rs);
+			}
+		}
 }

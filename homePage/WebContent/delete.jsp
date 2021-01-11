@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="page.BoardBean" %>
 <jsp:useBean id="bMgr" class="page.BoardMgr"/>
+<jsp:useBean id="cMgr" class="page.CommentMgr"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +20,7 @@
 		String dbPass = bean.getPass();
 		if(inPass.equals(dbPass)){
 			bMgr.deleteBoard(num);
+			cMgr.delete(num);
 			String url = "work.jsp?nowPage=" + nowPage;
 			response.sendRedirect(url);
 		}else{

@@ -132,7 +132,7 @@ function zipCheck() {
 				<script>document.regFrm.job.value="<%=mBean.getVisit()%>"</script>
 			</div>
 		</div>
-		<div class="d" align="center"><input type="submit" value="수정완료">&nbsp;&nbsp;<input type="reset" value="다시쓰기"></div>
+		<div class="d" align="center"><input type="submit" value="수정완료"></div>
 	</form>
 </div>
 <%@ include file = "footer.jsp" %>

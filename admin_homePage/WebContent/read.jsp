@@ -29,6 +29,13 @@
 	int count = bean.getCount();
 	session.setAttribute("bean", bean);
 	MemberBean been = regMgr.getMember(id);
+	Vector<commentBean> vlist = cMgr.getComment(num);
+	String url = "read.jsp?num=" + num + "&nowPage=" + nowPage + "&keyField=" + keyField + "&keyWord=" + keyWord;
+	if(request.getParameter("text")!= null){
+		int number = Integer.parseInt(request.getParameter("number"));
+		cMgr.deleteComment(number);
+		response.sendRedirect(url);
+	}
 %>
 <!DOCTYPE html>
 <html>
@@ -48,11 +55,14 @@ function down(filename){
 	document.downFrm.filename.value=filename;
 	document.downFrm.submit();
 }
-function button_event(){
-	if (confirm("정말 삭제하시겠습니까??") == true){ 
-	    document.form.submit();
-	}else{   
-	    return;
+function cmdelete(){
+	var msg = confirm("댓글을 삭제합니다");
+	if(msg == true){
+		console.log("yes");
+		document.getElementById('delFrm').submit();
+	}
+	else {
+		return false;
 	}
 }
 </script>
@@ -92,14 +102,19 @@ function button_event(){
 						<td colspan="6"><br><pre><%=content %></pre><br></td>
 					</tr>
 					<%
-					Vector<commentBean> vlist = cMgr.getComment(num);
 						for(int i=0;i<vlist.size();i++){
 							commentBean dean =vlist.get(i);
 					%>
 					<tr class="cc">
 						<td class="comName"><%=dean.getName() %></td>
 						<td class="comComment" colspan="4"><%=dean.getComment() %></td>
-						<td class="button" colspan="1"><input type="button" value="삭제하기" onclick="button_event();"></td>
+						<td class="delete" colspan="1">
+							<form name="delFrm" id="delFrm" method="post" action="">
+								<a href="#" onclick="cmdelete()" style="text-decoration:none">[삭 제]</a>
+								<input type="hidden" name="text" value="ok">
+								<input type="hidden" name="number" value="<%=dean.getNumber() %>">
+							</form>
+						</td>
 					</tr>
 					<%} %>
 					<tr>
@@ -108,7 +123,7 @@ function button_event(){
 								<table id="comment">
 									<tr>
 										<%
-												if(been.getName() != null){
+												if(id != null){
 										%>
 										<td class="e">
 										<div align="center">

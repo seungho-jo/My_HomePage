@@ -2,14 +2,21 @@ package page;
 
 public class commentBean {
 	
-	private String num;
+	private int number;
+	private int num;
 	private String comment;
 	private String name;
 	
-	public String getNum() {
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getComment() {

@@ -41,33 +41,33 @@
                 <div id="student_collection">
                     <div class="student_4">
                         <div class="class_4">4학년</div>
-                        <div class="a">
+                        <div class="class_4_member">
                             <img src="img/profile.jpg" alt="">
                             <div>김성훈</div>
                         </div>
-                        <div class="a">
+                        <div class="class_4_member">
                             <img src="img/profile.jpg" alt="">
                             <div>이해솔</div>
                         </div>
-                        <div class="a">
+                        <div class="class_4_member">
                             <img src="img/profile.jpg" alt="">
                             <div>조승호</div>
                         </div>
-                        <div class="a">
+                        <div class="class_4_member">
                             <img src="img/profile.jpg" alt="">
                             <div>천정빈</div>
                         </div>
                     </div>
                     <div class="student_3">
                         <div class="class_3">3학년</div>
-                        <div class="b">
+                        <div class="class_3_member">
                             <img src="img/profile.jpg" alt="">
                             <div>송영훈</div>
                         </div>
                     </div>
                     <div class="student_2">
                         <div class="class_2">2학년</div>
-                        <div class="c">
+                        <div class="class_2_member">
                             <img src="img/profile.jpg" alt="">
                             <div>서휘</div>
                         </div>

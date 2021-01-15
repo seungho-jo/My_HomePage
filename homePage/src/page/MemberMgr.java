@@ -1,7 +1,6 @@
 package page;
 
 import java.sql.*;
-import java.util.*;
 
 public class MemberMgr {
 	
@@ -35,36 +34,6 @@ public class MemberMgr {
 		}
 		return flag;
 	}
-	
-	// 우편번호 검색
-	public Vector<ZipcodeBean> zipcodeRead(String area3){
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String sql = null;
-		Vector<ZipcodeBean> vlist = new Vector<ZipcodeBean>();
-		try {
-			con = pool.getConnection();
-			sql = "select * from tblzipcode where area3 like ?";
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, "%" + area3 + "%");
-			rs = pstmt.executeQuery();
-			while(rs.next()) {
-				ZipcodeBean bean = new ZipcodeBean();
-				bean.setZipcode(rs.getString(1));
-				bean.setArea1(rs.getString(2));
-				bean.setArea2(rs.getString(3));
-				bean.setArea3(rs.getString(4));
-				vlist.addElement(bean);
-			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}finally {
-			pool.freeConnection(con,pstmt,rs);
-		}
-		return vlist;
-	}
-	
 	// 회원가입
 	public boolean insertMember(MemberBean bean) {
 		Connection con = null;
@@ -211,71 +180,4 @@ public class MemberMgr {
 			}
 			return flag;
 		}
-	//관리자 회원정보 가지고 오기(1)
-	public Vector<MemberBean> getMemberList(String keyField, String keyWord,
-			int start, int end) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String sql = null;
-		Vector<MemberBean> vlist = new Vector<MemberBean>();
-		try {
-			con = pool.getConnection();
-			if(keyWord.equals("null") || keyWord.equals("")) {
-				sql = "select * from tblmember order by logdate desc limit ?, ?";
-				pstmt = con.prepareStatement(sql);
-				pstmt.setInt(1, start);
-				pstmt.setInt(2, end);
-			} else {
-				sql = "select * from tblmember where " + keyField + " like ? ";
-				sql += "order by logdate desc limit ? , ?";
-				pstmt = con.prepareStatement(sql);
-				pstmt.setString(1, "%" + keyWord + "%");
-				pstmt.setInt(2, start);
-				pstmt.setInt(3, end);
-			}
-			rs = pstmt.executeQuery();
-			while(rs.next()) {
-				MemberBean bean = new MemberBean();
-				bean.setId(rs.getString("id"));
-				bean.setName(rs.getString("name"));
-				bean.setLogdate(rs.getString("logdate"));
-				bean.setVisit(rs.getString("visit"));
-				vlist.add(bean);
-			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}finally {
-			pool.freeConnection(con, pstmt, rs);
-		}
-		return vlist;
-	}
-	//총 회원수
-	public int getTotalCount(String keyField, String keyWord) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String sql = null;
-		int totalCount = 0;
-		try {
-			con = pool.getConnection();
-			if(keyWord.equals("null") || keyWord.equals("")) {
-				sql = "select count(id) from tblmember";
-				pstmt = con.prepareStatement(sql);
-			}else {
-				sql = "select count(id) from tblmember where" + keyField + "like ? ";
-				pstmt = con.prepareStatement(sql);
-				pstmt.setString(1, "%" + keyWord + "%");
-			}
-			rs = pstmt.executeQuery();
-			if(rs.next()) {
-				totalCount = rs.getInt(1); 
-			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}finally {
-			pool.freeConnection(con, pstmt, rs);
-		}
-		return totalCount;
-	}
 }

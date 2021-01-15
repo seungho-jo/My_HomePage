@@ -109,6 +109,7 @@ function cmdelete(){
 						<td class="comName"><%=dean.getName() %></td>
 						<td class="comComment" colspan="4"><%=dean.getComment() %></td>
 						<%
+							if(id != null){
 							if(been.getName().equals(dean.getName())){
 						%>
 						<td class="delete" colspan="1">
@@ -118,7 +119,7 @@ function cmdelete(){
 								<input type="hidden" name="number" value="<%=dean.getNumber() %>">
 							</form>
 						</td>
-						<%} %>
+						<%} }%>
 					</tr>
 					<%} %>
 					<tr>

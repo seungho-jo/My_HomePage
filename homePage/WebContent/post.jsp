@@ -23,9 +23,9 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<div id="main">
-		<table class="d">
+		<table class="title">
 			<tr>
-				<td class="dd">글쓰기</td>
+				<td class="title_name">글쓰기</td>
 			</tr>
 			<tr>
 				<td><hr></td>

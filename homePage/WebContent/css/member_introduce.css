@@ -130,16 +130,16 @@
     position: relative;
     display: block;
 }
-#student_collection .student_4 .a{
+#student_collection .student_4 .class_4_member{
     margin: 20px 0;
 }
-#student_collection .student_4 .a img{
+#student_collection .student_4 .class_4_member img{
     width: 150px;
     height: 150px;
     display: block;
     margin: auto;
 }
-#student_collection .student_4 .a div{
+#student_collection .student_4 .class_4_member div{
     text-align: center;
     font-size: 18px
 ;
@@ -162,16 +162,16 @@
     position: relative;
     display: block;
 }
-#student_collection .student_3 .b{
+#student_collection .student_3 .class_3_member{
     margin: 20px 0;
 }
-#student_collection .student_3 .b img{
+#student_collection .student_3 .class_3_member img{
     width: 150px;
     height: 150px;
     display: block;
     margin: auto;
 }
-#student_collection .student_3 .b div{
+#student_collection .student_3 .class_3_member div{
     text-align: center;
     font-size: 18px
 ;
@@ -194,16 +194,16 @@
     position: relative;
     display: block;
 }
-#student_collection .student_2 .c{
+#student_collection .student_2 .class_2_member{
     margin: 20px 0;
 }
-#student_collection .student_2 .c img{
+#student_collection .student_2 .class_2_member img{
     width: 150px;
     height: 150px;
     display: block;
     margin: auto;
 }
-#student_collection .student_2 .c div{
+#student_collection .student_2 .class_2_member div{
     text-align: center;
     font-size: 18px
 ;

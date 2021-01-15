@@ -12,21 +12,21 @@
 	font : bold;
 	font-size : 30px;
 }
-#main .a{
+#main .line{
 	display : flex;
 	border : 1px solid black;
 	height : 60px;
 }
-#main .a .b{
+#main .line .line_first{
 	line-height : 60px;
 	width : 17%;
 	padding-left : 10px;
 	border-right : 1px solid black;
 }
-#main .a .c{
+#main .line .line_second{
 	line-height : 60px;
 	padding-left : 10px;
 }
-#main .d{
+#main .submit{
 	padding-top : 20px;
 }

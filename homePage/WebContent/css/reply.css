@@ -11,23 +11,23 @@
 	background : rgba(0,0,0,0.1);
 	margin-bottom : 30px;
 }
-#table .a{
+#table .line{
 	display : flex;
 	width : 100%;
 	padding-bottom : 5px;
 }
-#table .a:nth-child(4) div:nth-child(3){
+#table .line:nth-child(4) div:nth-child(3){
 	line-height : 22px;
 	padding-left : 10px;
 }
-#table .a .b{
+#table .line .value{
 	width : 100px;;
 	padding-left : 30px;
 }
-#table .a:nth-child(3) .b{
+#table .line:nth-child(3) .value{
 	line-height : 151px;
 }
-#table .a:nth-child(3) .c{
+#table .line:nth-child(3) .textarea{
 	width : 900px;
 }
 #table .button{

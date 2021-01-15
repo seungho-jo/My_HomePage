@@ -60,18 +60,18 @@ body {
 	margin : 0;
 	padding : 0;
 }
-#main #b .total_field .dd{
+#main #b .total_field .none{
 	padding : 0;
 	height : 100%;
 }
-#main #b .total_field .ii{
+#main #b .total_field .button{
 	padding-bottom : 30px;
 }
 #main #b .total_field .field{
 	width : 100%;
 	border-top : 1px solid black;
 }
-#main #b .total_field .field .asd{
+#main #b .total_field .field .first_line{
 	margin-top : 15px;
 	backgrgound : rgba(0,0,0,0.1);
 	text-align : center;
@@ -79,7 +79,7 @@ body {
 	width : 100%;
 	height : 30px;
 }
-#main #b .total_field .field .ooo{
+#main #b .total_field .field .field_contents{
 	border-bottom : 1px solid rgba(0,0,0,0.1);
 	height : 30px;
 	line-height : 30px;

@@ -124,7 +124,7 @@ function check() {
 </table>
 <table border="0" class="total_field">
 	<tr>
-		<td class="dd" colspan="2">
+		<td class="none" colspan="2">
 		<%
 			vlist = bMgr.getBoardList(keyField, keyWord, start, end);
 			listSize = vlist.size();
@@ -133,7 +133,7 @@ function check() {
 			}else{
 		%>
 		<table border="0" class="field">
-			<tr bgcolor="#D0D0D0" class="asd">
+			<tr bgcolor="#D0D0D0" class="first_line">
 				<td width="5%"><b>번 호</b></td>
 				<td width="62%"><b>제 목</b></td>
 				<td width="10%"><b>작성자</b></td>
@@ -151,7 +151,7 @@ function check() {
 				int depth = bean.getDepth();
 				int count = bean.getCount();
 		%>
-			<tr class="ooo">
+			<tr class="field_contents">
 				<td><%=totalRecord-((nowPage-1)*numPerPage)-i %></td>
 				<td>
 				<%
@@ -173,7 +173,7 @@ function check() {
 		</td>
 	</tr>
 	<tr>
-	<td class="ii" align="right">
+	<td class="button" align="right">
 		<%
 		if(id != null){
 		%>

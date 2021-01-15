@@ -1,6 +1,4 @@
 @charset "UTF-8";
-body{
-}
 #login{
 	padding-top : 400px;
 	height : 500px;
@@ -18,7 +16,7 @@ body{
 	text-align : center;
 }
 
-#login .table tr .e{
+#login .table tr .value{
 	padding-left : 320px;
 	width : 150px;
 }

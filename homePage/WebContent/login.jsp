@@ -40,11 +40,11 @@ function loginCheck(){
 			<td class="td" colspan="2"><b>로그인</b></td>
 		</tr>
 		<tr>
-			<td class="e">아 이 디</td>
+			<td class="value">아 이 디</td>
 			<td><input name="id" size="30"></td>
 		</tr>
 		<tr>
-			<td class="e">비밀번호</td>
+			<td class="value">비밀번호</td>
 			<td><input type="password" name="pwd" size="30"></td>
 		</tr>
 		<tr>

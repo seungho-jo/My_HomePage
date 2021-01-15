@@ -104,82 +104,82 @@ function zipCheck() {
 		<form name="regFrm" method="post" action="memberProc.jsp">
 			<table class="large_box">
 				<tr>
-					<td colspan="3 "class="a">회원가입</td>
+					<td colspan="3 "class="title">회원가입</td>
 				</tr>
 				<tr>
-					<td class="b1">아이디</td>
-					<td class="b2">
+					<td class="line_1">아이디</td>
+					<td class="line_2">
 						<input name="id" size="15">
 						<input type="button" value="중복확인" onclick="idCheck(this.form.id.value)">
 					</td>
-					<td class="b3">아이디를 입력해 주세요.</td>
+					<td class="line_3">아이디를 입력해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">비밀번호</td>
-					<td class="b2"><input type="password" size="15" name="pwd"></td>
-					<td class="b3">패스워드를 입력해 주세요.</td>
+					<td class="line_1">비밀번호</td>
+					<td class="line_2"><input type="password" size="15" name="pwd"></td>
+					<td class="line_3">패스워드를 입력해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">비밀번호 확인</td>
-					<td class="b2"><input type="password" size="15" name="repwd"></td>
-					<td class="b3">패스워드를 확인합니다.</td>
+					<td class="line_1">비밀번호 확인</td>
+					<td class="line_2"><input type="password" size="15" name="repwd"></td>
+					<td class="line_3">패스워드를 확인합니다.</td>
 				</tr>
 				<tr>
-					<td class="b1">이름</td>
-					<td class="b2"><input name="name" size="15"></td>
-					<td class="b2">이름을 입력해 주세요.</td>
+					<td class="line_1">이름</td>
+					<td class="line_2"><input name="name" size="15"></td>
+					<td class="line_3">이름을 입력해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">성별</td>
-					<td class="b2">남<input type="radio" name="gender" value="1" checked="checked">
+					<td class="line_1">성별</td>
+					<td class="line_2">남<input type="radio" name="gender" value="1" checked="checked">
 					여<input type="radio" name="gender" value="2"></td>
-					<td class="b2">성별을 선택해 주세요.</td>
+					<td class="line_3">성별을 선택해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">생년월일</td>
-					<td class="b2"><input name="birthday" size="6">
+					<td class="line_1">생년월일</td>
+					<td class="line_2"><input name="birthday" size="6">
 					ex)950905</td>
-					<td class="b2">생년월일을 입력해 주세요.</td>
+					<td class="line_3">생년월일을 입력해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">Email</td>
-					<td class="b2"><input name="email" size="30"></td>
-					<td class="b2">이메일을 입력해 주세요.</td>
+					<td class="line_1">Email</td>
+					<td class="line_2"><input name="email" size="30"></td>
+					<td class="line_3">이메일을 입력해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">우편번호</td>
-					<td class="b2"><input id="zipcode" name="zipcode" size="5" readonly>
+					<td class="line_1">우편번호</td>
+					<td class="line_2"><input id="zipcode" name="zipcode" size="5" readonly>
 					<input type="button" value="우편번호찿기" onclick="zipCheck()"></td>
-					<td class="b2">우편번호를 검색하세요.</td>
+					<td class="line_3">우편번호를 검색하세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">주소</td>
-					<td class="b2"><input id="zipaddress" name="address" size="45"><input id="extraAddress" name="extraAddress"><input id="detailAddress" name="detailAddress"></td>
-					<td class="b2">주소를 입력해 주세요.</td>
+					<td class="line_1">주소</td>
+					<td class="line_2"><input id="zipaddress" name="address" size="45"><input id="extraAddress" name="extraAddress"><input id="detailAddress" name="detailAddress"></td>
+					<td class="line_3">주소를 입력해 주세요.</td>
 				</tr>
 				
 				<tr>
-					<td class="b1">취미</td>
-					<td class="b2">인터넷<input type="checkbox" name="hobby" value="인터넷">
+					<td class="line_1">취미</td>
+					<td class="line_2">인터넷<input type="checkbox" name="hobby" value="인터넷">
 					여행<input type="checkbox" name="hobby" value="여행">
 					게임<input type="checkbox" name="hobby" value="게임">
 					영화<input type="checkbox" name="hobby" value="영화">
 					운동<input type="checkbox" name="hobby" value="운동"></td>
-					<td class="b2">취미를 선택해 주세요.</td>
+					<td class="line_3">취미를 선택해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="b1">선택</td>
-					<td class="b2"><select name="visit">
+					<td class="line_1">선택</td>
+					<td class="line_2"><select name="visit">
 					<option value="0" selected>선택하세요.
 					<option value="학부생">학부생
 					<option value="대학원생">대학원생
 					<option value="직원">직원
 					<option value="방문자">방문자
 					</select></td>
-					<td class="b2">선택해 주세요.</td>
+					<td class="line_3">선택해 주세요.</td>
 				</tr>
 				<tr>
-					<td class="c" colspan="3">
+					<td class="button" colspan="3">
 						<input type="button" value="회원가입" onclick="inputCheck()">
 						&nbsp; &nbsp; 
 						<input type="reset" value="다시쓰기">

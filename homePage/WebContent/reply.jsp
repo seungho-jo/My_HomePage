@@ -29,24 +29,24 @@
 <div id="main">
 	<div class="title" align="center">답변하기</div>
 	<form id="table" name="table" method="post" action="boardReply">
-		<div class="a">
-			<div class="b">성명</div>
+		<div class="line">
+			<div class="value">성명</div>
 			<div><input name="name" value="<%=been.getName()%>" size="30" maxlength="20" readonly></div>
 		</div>
-		<div class="a">
-			<div class="b">제목</div>
+		<div class="line">
+			<div class="value">제목</div>
 			<div><input name="subject" value="답변 : <%=subject%>" size="50" maxlength="50"></div>
 		</div>
-		<div class="a">
-			<div class="b">내용</div>
-			<div class="c"><textarea id="smarteditor" name="content" rows="10" cols="100" style="width:766px; height:412px;">
+		<div class="line">
+			<div class="value">내용</div>
+			<div class="textarea"><textarea id="smarteditor" name="content" rows="10" cols="100" style="width:766px; height:412px;">
 			<%=content %>
 ================답변 글을 쓰세요.=================
 
 			</textarea></div>
 		</div>
-		<div class="a">
-			<div class="b">비밀번호</div>
+		<div class="line">
+			<div class="value">비밀번호</div>
 			<div><input type="password" name="pass" size="15" maxlength="15"></div>
 		</div>
 		<hr>

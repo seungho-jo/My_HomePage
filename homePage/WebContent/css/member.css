@@ -8,9 +8,6 @@ body {
 	width : 1200px;
 	margin : auto;
 }
-#main .box {
-	
-}
 #main .box .large_box {
 	margin : auto;
 	width : 800px;
@@ -24,7 +21,7 @@ body {
 	text-align : left;
 	padding : 2px;
 }
-#main .box .large_box tr .a{
+#main .box .large_box tr .title{
 	color : black;
 	font-weight : bold;
 	width : 100%;
@@ -34,21 +31,21 @@ body {
 	padding-bottom : 30px;
 }
 
-#main .box .large_box tr .b1{
+#main .box .large_box tr .line_1{
 	width : 20%;
 	border : 1px solid black;
 	vertical-align : middle;
 }
-#main .box .large_box tr .b2{
+#main .box .large_box tr .line_2{
 	width : 50%;
 	border : 1px solid black;
 	vertical-align : middle;
 }
-#main .box .large_box tr .b3{
+#main .box .large_box tr .line_3{
 	width : 30%;
 	border : 1px solid black;
 	vertical-align : middle;
 }
-#main .box .large_box .c{
+#main .box .large_box .button{
 	text-align: center;
 }

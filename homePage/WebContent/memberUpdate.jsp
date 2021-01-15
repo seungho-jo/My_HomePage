@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/header.css"/>
 <link rel="stylesheet" href="css/footer.css"/>
 <link rel="stylesheet" href="css/reset.css"/>
-<link rel="stylesheet" href="css/updatemember.css"/>
+<link rel="stylesheet" href="css/memberUpdate.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
@@ -73,42 +73,42 @@ function zipCheck() {
 <div id="main">
 	<form name="regFrm" method="post" action="memberUpdateProc.jsp">
 		<div class="title">회원정보수정</div>
-		<div class="a">
-			<div class="b">아이디</div>
-			<div class="c"><input name="id" value="<%=id %>" readonly></div>
+		<div class="line">
+			<div class="line_first">아이디</div>
+			<div class="line_second"><input name="id" value="<%=id %>" readonly></div>
 		</div>
-		<div class="a">
-			<div class="b">패스워드</div>
-			<div class="c"><input type="password" name="pwd" value="<%=mBean.getPwd() %>"></div>
+		<div class="line">
+			<div class="line_first">패스워드</div>
+			<div class="line_second"><input type="password" name="pwd" value="<%=mBean.getPwd() %>"></div>
 		</div>
-		<div class="a">
-			<div class="b">이름</div>
-			<div class="c"><input name="name" value="<%=mBean.getName() %>"></div>
+		<div class="line">
+			<div class="line_first">이름</div>
+			<div class="line_second"><input name="name" value="<%=mBean.getName() %>"></div>
 		</div>
-		<div class="a">
-			<div class="b">성별</div>
-			<div class="c">남<input type="radio" name="gender" value="1" <%=mBean.getGender().equals("1") ? "checked" : "" %>></div>
-			<div class="c">여<input type="radio" name="gender" value="2" <%=mBean.getGender().equals("2") ? "checked" : "" %>></div>
+		<div class="line">
+			<div class="line_first">성별</div>
+			<div class="line_second">남<input type="radio" name="gender" value="1" <%=mBean.getGender().equals("1") ? "checked" : "" %>></div>
+			<div class="line_second">여<input type="radio" name="gender" value="2" <%=mBean.getGender().equals("2") ? "checked" : "" %>></div>
 		</div>
-		<div class="a">
-			<div class="b">생년월일</div>
-			<div class="c"><input name="birthday" value="<%=mBean.getBirthday() %>"> ex)950905</div>
+		<div class="line">
+			<div class="line_first">생년월일</div>
+			<div class="line_second"><input name="birthday" value="<%=mBean.getBirthday() %>"> ex)950905</div>
 		</div>
-		<div class="a">
-			<div class="b">Email</div>
-			<div class="c"><input name="email" value="<%=mBean.getEmail() %>"></div>
+		<div class="line">
+			<div class="line_first">Email</div>
+			<div class="line_second"><input name="email" value="<%=mBean.getEmail() %>"></div>
 		</div>
-		<div class="a">
-			<div class="b">우편번호</div>
-			<div class="c"><input id="zipcode" name="zipcode" value="<%=mBean.getZipcode() %>" readonly><input type="button" value="우편번호찾기" onclick="zipCheck()"></div>
+		<div class="line">
+			<div class="line_first">우편번호</div>
+			<div class="line_second"><input id="zipcode" name="zipcode" value="<%=mBean.getZipcode() %>" readonly><input type="button" value="우편번호찾기" onclick="zipCheck()"></div>
 		</div>
-		<div class="a">
-			<div class="b">주소</div>
-			<div class="c"><input id="zipaddress" name="address" value="<%=mBean.getAddress() %>"><input id="extraAddress" name="extraAddress" value="<%=mBean.getExtraAddress() %>"><input id="detailAddress" name="detailAddress" value="<%=mBean.getDetailAddress() %>"></div>
+		<div class="line">
+			<div class="line_first">주소</div>
+			<div class="line_second"><input id="zipaddress" name="address" value="<%=mBean.getAddress() %>"><input id="extraAddress" name="extraAddress" value="<%=mBean.getExtraAddress() %>"><input id="detailAddress" name="detailAddress" value="<%=mBean.getDetailAddress() %>"></div>
 		</div>
-		<div class="a">
-			<div class="b">취미</div>
-			<div class="c">
+		<div class="line">
+			<div class="line_first">취미</div>
+			<div class="line_second">
 				<%
 					String list[] = {"인터넷","여행","게임","영화","운동"};
 					String hobbys[] = mBean.getHobby();
@@ -119,9 +119,9 @@ function zipCheck() {
 				%>
 			</div>
 		</div>
-		<div class="a">
-			<div class="b">선택</div>
-			<div class="c">
+		<div class="line">
+			<div class="line_first">선택</div>
+			<div class="line_second">
 				<select name="visit">
 					<option value="0" selected>선택하세요.
 					<option value="학부생">학부생
@@ -132,7 +132,7 @@ function zipCheck() {
 				<script>document.regFrm.job.value="<%=mBean.getVisit()%>"</script>
 			</div>
 		</div>
-		<div class="d" align="center"><input type="submit" value="수정완료"></div>
+		<div class="submit" align="center"><input type="submit" value="수정완료"></div>
 	</form>
 </div>
 <%@ include file = "footer.jsp" %>

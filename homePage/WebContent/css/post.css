@@ -5,12 +5,12 @@
 	margin : auto;
 	margin-top : 535px;
 }
-#main .d{
+#main .title{
 	width : 700px;
 	margin : 0 auto;
 	margin-bottom : 30px;
 }
-#main .d .dd{
+#main .title .title_name{
 	font-size : 25px;
 	font : bold;
 }

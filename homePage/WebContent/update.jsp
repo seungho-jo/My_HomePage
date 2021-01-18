@@ -24,7 +24,7 @@
 <script type="text/javascript" src="SE2/js/HuskyEZCreator.js" charset="utf-8"></script>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 	<div class="title" align="center">수정하기</div>
 	<form id="table" name="updateFrm" method="post" action="boardUpdate">

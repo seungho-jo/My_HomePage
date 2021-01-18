@@ -72,7 +72,7 @@ function cmdelete(){
 <link rel="stylesheet" href="css/read.css"/>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main" align="center">
 	<table class="table">
 		<tr>

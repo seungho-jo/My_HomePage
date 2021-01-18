@@ -1,5 +1,9 @@
 package page;
-
+/**
+ * 게시판을 구성하는데 필요한 요소를 저장,불러오는 클래스 입니다
+ * @author jsh
+ *
+ */
 public class BoardBean {
 	
 	private int num;

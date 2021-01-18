@@ -49,7 +49,7 @@ function check(){
 <link rel="stylesheet" href="css/delete.css"/>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div align="center" id="main">
 	<table class="delete">
 		<tr>

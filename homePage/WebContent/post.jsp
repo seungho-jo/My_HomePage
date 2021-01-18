@@ -21,7 +21,7 @@
 <script type="text/javascript" src="SE2/js/HuskyEZCreator.js" charset="utf-8"></script>
 </head>
 <body>
-	<%@ include file="header.jsp"%>
+	<jsp:include page="header.jsp"></jsp:include>
 	<div id="main">
 		<table class="title">
 			<tr>

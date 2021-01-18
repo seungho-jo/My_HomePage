@@ -22,7 +22,7 @@
 	charset="utf-8"></script>
 </head>
 <body>
-	<%@ include file="header.jsp"%>
+	<jsp:include page="header.jsp"></jsp:include>
 	<div id="main">
 		<table class="d">
 			<tr>

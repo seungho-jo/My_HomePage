@@ -23,7 +23,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 <canvas id="myChart" width="400px" height="400px" style="display:inline"></canvas>
 <canvas id="myChart2" width="600px" height="400px"></canvas>

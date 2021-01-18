@@ -89,7 +89,7 @@ function check() {
 </script>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 <div id="a">
 

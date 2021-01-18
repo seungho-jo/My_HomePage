@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/reset.css"/>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <section id="main">
         <div id="main_inner">
             <img src="img/main.png" alt="">

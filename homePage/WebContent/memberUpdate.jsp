@@ -69,7 +69,7 @@ function zipCheck() {
 </script>
 </head>
 <body onLoad="regFrm.id.focus()">
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 	<form name="regFrm" method="post" action="memberUpdateProc.jsp">
 		<div class="title">회원정보수정</div>

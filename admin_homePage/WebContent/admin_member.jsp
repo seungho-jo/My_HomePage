@@ -33,7 +33,7 @@ function member_delete(){
 <link rel="stylesheet" href="css/admin_member.css"/>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 		<div class="title">회원정보</div>
 		<div class="a">

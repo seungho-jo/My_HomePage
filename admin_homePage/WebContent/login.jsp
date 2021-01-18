@@ -31,7 +31,7 @@ function loginCheck(){
 </script>
 </head>
 <body>
-<%@ include file = "header.jsp"  %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="login">
 <form name="loginFrm" method="post" action="loginProc.jsp">
 	<table class="table">

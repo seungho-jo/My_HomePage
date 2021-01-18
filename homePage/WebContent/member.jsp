@@ -98,7 +98,7 @@ function zipCheck() {
 </script>
 </head>
 <body onLoad="regFrm.id.focus()">
-<%@ include file = "header.jsp" %>
+<jsp:include page="header.jsp"></jsp:include>
 <div id="main">
 	<div class="box">
 		<form name="regFrm" method="post" action="memberProc.jsp">
